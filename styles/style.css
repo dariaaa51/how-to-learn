@@ -55,7 +55,7 @@
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
-
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -77,14 +77,15 @@
   top: 64px;
 }
 
+.description {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .two-columns {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-
 }
 
 .two-columns__brief {
@@ -132,16 +133,18 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
   }
 .section-subtitle {
-  margin:auto;
+  margin: auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
   min-width: 60%;
   }
 .table {
@@ -226,8 +229,8 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding-bottom: 90px;
-  z-index: -2;
+  padding-bottom: 0;
+  /* z-index: -2; */
 }
 
 .kaufman__triangle {
@@ -240,7 +243,7 @@
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
+  z-index: 1;
 }
 
 .section-title_theme_dark {
@@ -257,22 +260,19 @@
 
 .table_theme_dark {
   z-index: 2;
-  /* padding: 0;
-  margin-top: 0;
-  display: flex; */
+  margin-bottom: 90px;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   color: #ffffff;
   margin-top: 80px;
-  margin-bottom: 0;
   padding: 0;
 }
 
 .table__heading_theme_dark {
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .table__text_theme_dark {
@@ -307,7 +307,7 @@
   flex-direction: column;
 }
 
-.footer_column_content_copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -323,7 +323,7 @@
 .footer__author {
   line-height: 25px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: normal;
   margin: 18px 0 18px 0;
 }
 
@@ -335,21 +335,25 @@
   margin-top: 0;
 }
 
-.footer_column-links {
+.footer__column-links {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
   color: #ffffff;
+  list-style-type: none;
+  padding-left: 0;
 
 }
-.footer_column-link {
+.footer__column-link {
   list-style-type: none;
   margin-bottom: 16px;
   padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer__social-icon {
