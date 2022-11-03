@@ -1,0 +1,6 @@
+.linkblock {
+  transition: opacity .6s linear;
+}
+.linkblock:hover {
+  opacity: .4;
+}
